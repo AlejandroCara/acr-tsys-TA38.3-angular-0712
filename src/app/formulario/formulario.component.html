@@ -1,0 +1,27 @@
+<div class="container-flex main">
+    <div class="row">
+        <p class="col-md-1 col-3 label">Codigo</p>
+        <div class="col-md-3  col-7">
+            <input #formCodigo type="number" name="codigo" id="codigo" placeholder="1, 2..." class="form-control" >
+        </div>
+        <p class="offset-md-1 offset-3 err" #nameErr hidden>Introduzca un codigo numerico</p>
+    </div>
+    <div class="row">
+        <p class="col-md-1 col-3 label">Descripción</p>
+        <div class="col-md-3  col-7">
+            <input #formDesc type="text" name="descripcion" id="descripcion" placeholder="Es un ..." class="form-control">
+        </div>
+        <p class="offset-md-1 offset-3 err" #mailErr hidden>Introduzca una descripción</p>
+    </div>
+    <div class="row">
+        <p class="col-md-1 col-3 label">Precio</p>
+        <div class="col-md-3  col-7">           
+            <input #formPrecio type="number" name="precio" id="precio" placeholder="12" class="form-control">
+        </div>
+        <p class="offset-md-1 offset-3 err" #msgErr hidden>Introduzca un precio</p>
+    </div>
+    <div class="row-flex justify-content-center">   
+        <button (click)="clickGuardar()" class="btn btn-primary" id="guardarBtn">Añadir</button>
+        <button (click)="onModify()" class="btn btn-primary" disabled id="modBtn">Modificar</button>
+    </div>
+</div>
